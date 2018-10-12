@@ -285,9 +285,9 @@ input[type="submit"]:active {
   .sub-form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 510px;
+    justify-content: center;
+    align-content: center;
+    width: 5px;
     padding: 0px;
   }
   /* ============== */
