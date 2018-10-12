@@ -163,6 +163,7 @@ footer h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 20px;
 }
 
 .social-media a i {
@@ -172,8 +173,8 @@ footer h2 {
 
 /* top posts */
 .featured-content {
-  box-sizing: border-box;
   padding: 20px;
+  height: 100%;
 }
 
 .content-list ul {
@@ -204,6 +205,7 @@ footer h2 {
   justify-content: space-between;
   align-items: center;
   width: 510px;
+  padding: 20px;
 }
 
 input[type="email"] {
@@ -274,16 +276,21 @@ input[type="submit"]:active {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
   }
   /* ============== */
 }
-
-@media only screen and (min-width: 768px) {
-  footer {
-    height: 100%;
-  }
-}
-
 
 /* ============================= */
 
