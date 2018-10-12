@@ -206,7 +206,7 @@ footer h2 {
   justify-content: space-between;
   align-items: center;
   width: 510px;
-  padding: 20px;
+  padding: 0px;
 }
 
 input[type="email"] {
@@ -284,11 +284,11 @@ input[type="submit"]:active {
 
   .sub-form {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 250px;
+    width: 510px;
+    padding: 0px;
   }
   /* ============== */
 }
@@ -299,5 +299,4 @@ input[type="submit"]:active {
 .menu-active {
   display: flex;
 }
-
 /* ==================== */
