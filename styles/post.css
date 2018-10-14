@@ -28,6 +28,19 @@
   padding: 10px;
 }
 
+.post-data {
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.post-author {
+  font-size: 15px;
+}
+
+.post-time {
+  font-size: 15px;
+}
+
 .blog-image {
   height: 400px;
   width: 100%;
