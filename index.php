@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Danilo Miranda | Web Developer</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles/home.css">
-</head>
-<body>
-  <div class="main-wrapper">
-    <div class="banner">
-    </div>
-    <nav class="menu-navigation-mob">
-      <i id="menu-button" class="fas fa-bars"></i>
-    </nav>
-    <nav class="menu-navigation">
-      <ul class="menu-options">
-        <li><a href="" class="menu-option">Resources</a></li>
-        <li><a href="" class="menu-option">People</a></li>
-        <li><a href="" class="menu-option">Setup</a></li>
-        <li><a href="" class="menu-option">About me</a></li>
-        <li><a href="" class="menu-option">Work</a></li>
-      </ul>
-    </nav>
+<?php get_header() ?>
     <div class="content-wrapper">
       <div class="post-card">
         <img class="featured-image" src="img/Feature-image.jpg" alt="Featured image">
@@ -87,33 +62,4 @@
           </div>
       </div>
     </div>
-    <footer>
-      <div class="social-media">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      <div class="featured-content">
-        <h2>Top content</h2>
-        <div class="content-list">
-          <ul>
-            <li><a href="#">Post title</a></li>
-            <li><a href="#">Post title</a></li>
-            <li><a href="#">Post title</a></li>
-            <li><a href="#">Post title</a></li>
-            <li><a href="#">Post title</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="sub-form">
-        <form>
-          <input type="email" placeholder="Your email..." required>
-          <input type="submit" value="Subscribe">
-        </form>
-      </div>
-    </footer>
-  </div>
-  <script src="scripts/index.js"></script>
-</body>
-</html>
+<?php get_footer() ?>

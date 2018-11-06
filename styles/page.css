@@ -15,11 +15,13 @@ body {
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 .page-content h1 {
+    width: fit-content;
     font-size: 40px;
     border-bottom: 4px solid #20BFB1;
 }
