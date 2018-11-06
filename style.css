@@ -21,6 +21,12 @@ body {
   padding: 0;
 }
 
+
+/*a {
+  text-decoration: none;
+  color: #FFF;
+}*/
+
 .main-wrapper {
   width: 100%;
   display: flex;
@@ -56,10 +62,7 @@ body {
 }
 
 .fa-bars {
-  /* border: 1px solid #FFF; */
   padding: 5px;
-  /* border-radius: 15px;
-  box-shadow: 1px 1px 20px #FFF; */
   transition: .2s;
 }
 
@@ -93,10 +96,19 @@ body {
   border-color: #FFF;
 }
 
-.menu-option {
+.menu-options li a {
   text-decoration: none;
   color: #FFF;
 }
+
+/*
+** There's no need to use this CSS style because of redundance
+** The current selected page will already have its title shown 
+** right below the menu bar
+.current_page_item {
+  border-bottom: 3px solid #FFF !important;
+}
+*/
 
 /* content */
 .content-wrapper {

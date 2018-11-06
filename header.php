@@ -19,11 +19,18 @@
       <i id="menu-button" class="fas fa-bars"></i>
     </nav>
     <nav class="menu-navigation">
-      <ul class="menu-options">
-        <li><a href="" class="menu-option">Resources</a></li>
+        <?php 
+          $args = array(
+            'menu' => 'principal',
+            'menu_class' => 'menu-options',
+            'container' => false
+          );
+          wp_nav_menu($args);
+        ?>
+        <!--<li><a href="" class="menu-option">Resources</a></li>
         <li><a href="" class="menu-option">People</a></li>
         <li><a href="" class="menu-option">Setup</a></li>
         <li><a href="" class="menu-option">About me</a></li>
-        <li><a href="" class="menu-option">Work</a></li>
-      </ul>
+        <li><a href="" class="menu-option">Work</a></li>-->
+      
     </nav>
