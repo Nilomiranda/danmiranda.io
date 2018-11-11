@@ -1,13 +1,3 @@
-const menuButton = document.querySelector('#menu-button');
-const menu = document.querySelector('.menu-navigation');
-
-const showMenu = () => {
-  /* this will show or hide the menu on mobile */
-  menu.classList.toggle('menu-active');
-}
-
-menuButton.addEventListener('click', showMenu);
-
 /**
  * This will change the post preview text in case it's too long
  * The limit is 68 characters. If the preview text is longer than that
@@ -16,6 +6,7 @@ menuButton.addEventListener('click', showMenu);
  */
 
 const postPreviews = Array.from(document.querySelectorAll('.post-preview'));
+console.log({ postPreviews });
 
 const newPostPreview = postPreviews.map(postPreview => {
   if(postPreview.innerText.length > 68) {
@@ -27,3 +18,15 @@ const newPostPreview = postPreviews.map(postPreview => {
     return postPreview.innerText;
   }
 });
+console.log({ newPostPreview });
+
+const menuButton = document.querySelector('#menu-button');
+const menu = document.querySelector('.menu-navigation');
+
+const showMenu = () => {
+  /* this will show or hide the menu on mobile */
+  menu.classList.toggle('menu-active');
+}
+
+menuButton.addEventListener('click', showMenu);
+
