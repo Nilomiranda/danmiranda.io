@@ -8,7 +8,7 @@
             <h3 class="post-preview">
               <?php the_excerpt() ?>
             </h3>
-            <a class="follow-content-button" href="#">Read more</a>
+            <a class="follow-content-button" href="<?php echo get_permalink() ?>">Read more</a>
           </div>
         </div>
       <?php endwhile; else: endif ?>

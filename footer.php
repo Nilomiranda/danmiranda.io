@@ -9,9 +9,7 @@
         <h2>Top content</h2>
         <div class="content-list">
           <ul>
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post() ?>
-              <li><a href="#"><?php the_title() ?></a></li>
-            <?php endwhile; else: endif;?>
+            <li><a href="#"><?php get_posts() ?></a></li>
             <!--<li><a href="#">Post title</a></li>
             <li><a href="#">Post title</a></li>
             <li><a href="#">Post title</a></li>
