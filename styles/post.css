@@ -4,7 +4,7 @@
 }
 
 .post-container {
-  width: 90%;
+  width: 70%;
   height: 100%;
   background-color: #FFF;
   box-shadow: 10px 10px 50px #888;
@@ -44,6 +44,13 @@
 .blog-image {
   height: 400px;
   width: 100%;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .post-container {
+    width: 90%;
+  }
 }
 
 
