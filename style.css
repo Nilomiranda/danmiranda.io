@@ -61,12 +61,12 @@ body {
   display: none;
 }
 
-.fa-bars {
+.fas {
   padding: 5px;
   transition: .2s;
 }
 
-.fa-bars:hover {
+.fas:hover {
   cursor: pointer;
   transform: translateY(-3px);
 }
@@ -278,6 +278,10 @@ input[type="submit"]:active {
   transform: translateY(4px);
   outline: none;
   box-shadow: 0 3px #DAA520;
+}
+
+code.code-container {
+  font-size: 15px;
 }
 
 /* ======== MOBILE ============= */

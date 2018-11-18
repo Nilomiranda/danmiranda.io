@@ -9,16 +9,16 @@
         <h2>Top content</h2>
         <div class="content-list">
           <ul>
-            <li><a href="#"><?php get_posts() ?></a></li>
-            <!--<li><a href="#">Post title</a></li>
-            <li><a href="#">Post title</a></li>
-            <li><a href="#">Post title</a></li>
-            <li><a href="#">Post title</a></li>-->
+            <?php $footer = get_page_by_title('footer'); ?>
+            <?php if ( have_rows( 'featured_posts_list', $footer ) ) : while ( have_rows( 'featured_posts_list', $footer ) ) : the_row(); ?>
+              <li><a href="<?php the_sub_field('featured_post_link', $footer) ?>"><?php the_sub_field('featured_post_title', $footer) ?></a></li>
+            <?php endwhile; else: ; endif; ?>
           </ul>
         </div>
       </div>
       <div class="sub-form">
         <form>
+          <h2>Newsletter</h2>
           <input type="email" placeholder="Your email..." required>
           <input type="submit" value="Subscribe">
         </form>

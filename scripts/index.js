@@ -26,6 +26,19 @@ const menu = document.querySelector('.menu-navigation');
 const showMenu = () => {
   /* this will show or hide the menu on mobile */
   menu.classList.toggle('menu-active');
+  
+  if (menuButton.classList.contains('fa-bars')) {
+    menuButton.classList.remove('fa-bars');
+    menuButton.classList.add('fa-times');
+    return;
+  }
+
+  if (menuButton.classList.contains('fa-times')) {
+    menuButton.classList.remove('fa-times');
+    menuButton.classList.add('fa-bars');
+    return;
+  }
+
 }
 
 menuButton.addEventListener('click', showMenu);
