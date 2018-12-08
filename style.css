@@ -172,7 +172,7 @@ footer {
   height: 266px;
   background-color: #222;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-content: space-around;
   box-sizing: border-box;
   padding: 30px;
@@ -192,9 +192,49 @@ footer h2 {
   padding: 20px;
 }
 
-.social-media a i {
+/* .social-media a img {
   font-size: 48px;
   color: #20BFB1;
+} */
+
+svg {
+  width: 50px;
+}
+
+.linkedin-icon {
+  stroke: #0077B5;
+}
+
+.linkedin-icon:hover { 
+  fill: #0077B5;
+  stroke: none;
+}
+
+.twitter-icon {
+  stroke: #1DA1F2;
+}
+
+.twitter-icon:hover {
+  fill: #1DA1F2;
+  stroke: none;
+}
+
+.facebook-icon {
+  stroke: #3B5998; 
+}
+
+.facebook-icon:hover {
+  fill: #3B5998;
+  stroke: none;
+}
+
+.github-icon {
+  stroke: #fff;
+}
+
+.github-icon:hover {
+  fill: #fff;
+  stroke: none;
 }
 
 /* top posts */
